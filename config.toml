@@ -1,0 +1,16 @@
+baseURL = "https://hanzidict.github.io/"
+title = "Hanzi Network Dictionary"
+disableKinds = ["RSS","taxonomy","taxonomyTerm"]
+contentdir = "content"
+layoutdir =  "layouts"
+staticdir =  "static"
+publishdir = "public"
+
+[params]
+  homeMotto = "Characters will never be the same again"
+
+[permalinks]
+  page = "/:filename/"
+
+[outputs]
+home = ["HTML"]

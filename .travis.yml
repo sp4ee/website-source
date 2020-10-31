@@ -1,0 +1,21 @@
+---
+language: node_js
+node_js:
+  - "14"
+
+install:
+  - curl -LO https://github.com/gohugoio/hugo/releases/download/v0.75.1/hugo_0.75.1_Linux-64bit.deb
+  - sudo dpkg -i hugo_0.75.1_Linux-64bit.deb
+  - npm install -g gulp-cli
+  - yarn install
+
+script:
+  - gulp
+  - hugo
+
+deploy:
+  - provider: script
+    script: chmod +x ./deploy.sh && ./deploy.sh
+    skip_cleanup: true
+    on:
+      branch: master

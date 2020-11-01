@@ -1,11 +1,19 @@
 ---
-description: Such camera angle, many gradient, so gorgeous.
-title: Home of the Solarpunk Forever Engine
 layout: landing
+description: Updates and ramblings about SP4EE, an object that is sustainable, durable, and serves no practical purpose whatsoever.
+title: Home of the Solarpunk Forever Engine
 ---
 
-![Sketch of the Solarpunk Forever Engine](/images/sp4ee-concept-sketch.jpg#narrow)
+![Sketch of the Solarpunk Forever Engine](/images/sp4ee-concept-sketch.jpg)
 
-This is my home, senhor.
+The Solarpunk Forever Engine (or SP4EE) is a tiny scratch-built solar engine. It spins when the sun shines and it keeps counting its turns forever.
 
-Content?!
+SP4EE is work in progress, and this site is a build log. [Read more about the concept](/about), or check out the posts below. If you want an update in your Inbox once every week or two, subscribe to the email list here:
+
+{{< rawhtml >}}
+<div class="substack-signup">
+  <iframe src="https://sp4ee.substack.com/embed" frameborder="0" scrolling="no"></iframe>
+</div>
+{{< /rawhtml >}}
+
+

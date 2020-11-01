@@ -1,8 +1,9 @@
 {{ partial "header" . }}
 
-<article>
-<h1>{{ .Title }}</h1>
-{{ .Content }}
+<article class="main">
+  <nav class="above-title"><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a> »</nav>
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
 </article>
 
 {{ partial "footer" . }}

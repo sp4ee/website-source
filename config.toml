@@ -1,5 +1,5 @@
-baseURL = "https://hanzidict.github.io/"
-title = "Hanzi Network Dictionary"
+baseURL = "https://sp4ee.github.io/"
+title = "Solarpunk Forever Engine"
 disableKinds = ["RSS","taxonomy","taxonomyTerm"]
 contentdir = "content"
 layoutdir =  "layouts"
@@ -7,7 +7,7 @@ staticdir =  "static"
 publishdir = "public"
 
 [params]
-  homeMotto = "Characters will never be the same again"
+  homeMotto = "A sustainable and symbiotic intelligent machine"
 
 [permalinks]
   page = "/:filename/"

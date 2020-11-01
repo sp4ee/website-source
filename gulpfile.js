@@ -47,10 +47,10 @@ gulp.task('browserify', () => {
     })
     .pipe(source('bundle.js'))
     .pipe(buffer())
-    //.pipe(uglify())
-    //.on('error', err => {
-    //  gutil.log("Uglify Error", gutil.colors.red(err.message))
-    //})
+    .pipe(uglify())
+    .on('error', err => {
+     gutil.log("Uglify Error", gutil.colors.red(err.message))
+    })
     .pipe(sourcemaps.init({ loadMaps: true }))
     .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest('./public/'))

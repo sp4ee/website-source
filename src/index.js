@@ -1,4 +1,4 @@
-var $ = require('jquery');
+//var $ = require('jquery');
 
 var dataIdx = null;
 var dataStore = null;

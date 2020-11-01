@@ -1,10 +1,10 @@
 //@import "bariol.less";
 
-@fntBaseFamily: "Open Sans", sans-serif;
-@fntTitleFamily: "Noto Serif", serif;
+@fntBaseFamily: "Segoe UI", "San Francisco", Ubuntu, sans-serif;
+@fntTitleFamily: "Palatino Linotype," "Book Antiqua", Palatino, serif;
 @fntBaseSize: 18px;
 @clrText: #303030;
-@clrDarkBase: #cb6d0b;
+@clrContrast: #cf1b1b;
 
 
 * { box-sizing: border-box; }
@@ -12,7 +12,6 @@ html {
   height: 100%; border: 0; margin: 0; padding: 0; overflow-y: scroll;
 }
 body {
-  //background-color: #fcfbf4; background-image: url("images/redox-02.png");
   background-color: white;
   margin: 0; position: relative;
   width: 100%; min-height: 100%; padding-bottom: 56px;
@@ -21,35 +20,27 @@ body {
   font-size: @fntBaseSize; font-family: @fntBaseFamily;
 }
 
-body>header, body>article {
+body>article {
   width: 900px; position: relative; margin: 0 auto;
 }
-body>header {
-  border-bottom: 3px solid @clrDarkBase;
-  display: flex; align-items: center;
-  svg {
-    display: inline-block; width: 96px; height: 96px; margin-right: 16px;
-    flex-shrink: 0;
-    .part1 { fill: #6b83b7; }
-    .part2 { fill: #de60ad; }
-    .part3 { fill: #46af8e; }
-  }
-  .title {
-    display: inline-block; max-width: 350px;
-    text-transform: uppercase; font-family: @fntTitleFamily; font-size: 36px; font-weight: bold;
-    color: @clrDarkBase; line-height: 40px;
-  }
-}
+
 body>footer {
   display: flex; justify-content: center;
   position: absolute; bottom: 0;
   width: 100%; padding: 8px; font-size: 14px;
-  a:hover { text-decoration: none; }
 }
 
-a { color: @clrDarkBase; text-decoration: none; &:hover { text-decoration: underline; } }
-h1 { 
-  font-size: 36px; font-family: @fntTitleFamily; font-weight: bold; color: #505050;
+a { 
+  color: @clrText; text-decoration: none; border-bottom: 1pt dotted @clrContrast;
+  &:hover { border-bottom-style: solid; }
+}
+
+article.main {
+  padding-top: 30px;
+  img[src$='#narrow'] { display: block; width: 70%; }
+  h1 { text-transform: lowercase; font-family: @fntTitleFamily; font-size: 36px; font-weight: bold; margin: 0 0 10px 0; }
+  h2 { text-transform: lowercase; font-family: @fntTitleFamily; font-size: 26px; }
+  nav.above-title a { font-size: 14px; text-transform: lowercase; }
 }
 
 @media screen and (max-width: 912px) {
@@ -63,13 +54,8 @@ h1 {
 }
 
 @media screen and (max-width: 500px) {
-  body>header .title { 
-    font-size: 30px; line-height: 32px;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  body>header .title { 
-    font-size: 24px; line-height: 26px;
+  body>header {
+    h1 {  font-size: 24px; line-height: 26px; }
+    img { width: 100%; }
   }
 }

@@ -1,0 +1,17 @@
+{{ partial "header" . }}
+
+<article class="main">
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+
+  {{ range $index, $value := (where .Site.RegularPages "Section" "build-log" ) }}
+  {{ if not $index }}
+  {{ .Render "build-log-list-full" }}
+  {{ else }}
+  {{ .Render "build-log-list-short" }}
+  {{ end }}
+  {{ end }}
+
+</article>
+
+{{ partial "footer" . }}

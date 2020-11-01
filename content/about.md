@@ -15,5 +15,5 @@ It has no moving parts other than the tiny ball bearing on which the flywheel is
 ### Contact
 
 You can find SP4EE on Github at [github.com/sp4ee](https://github.com/sp4ee).  
-You can find me on Twitter as [@twillability](https://twitter.com/twilliability)
+You can find me on Twitter as [@twilliability](https://twitter.com/twilliability)
 or at my blog [Jealous Markup](https://jealousmarkup.xyz/).

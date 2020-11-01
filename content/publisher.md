@@ -1,4 +1,5 @@
 ---
+noindex: true
 slug: publisher
 title: Publisher
 description: Such camera angle, many gradient, so gorgeous.

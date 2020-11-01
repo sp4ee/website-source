@@ -1,7 +1,7 @@
 //@import "bariol.less";
 
 @fntBaseFamily: "Segoe UI", "San Francisco", Ubuntu, sans-serif;
-@fntTitleFamily: "Palatino Linotype," "Book Antiqua", Palatino, serif;
+@fntTitleFamily: "Georgia", serif;
 @fntBaseSize: 18px;
 @clrText: #303030;
 @clrContrast: #cf1b1b;
@@ -38,8 +38,8 @@ a {
 article.main {
   padding-top: 30px;
   img[src$='#narrow'] { display: block; width: 70%; }
-  h1 { text-transform: lowercase; font-family: @fntTitleFamily; font-size: 36px; font-weight: bold; margin: 0 0 10px 0; }
-  h2 { text-transform: lowercase; font-family: @fntTitleFamily; font-size: 26px; }
+  h1 { text-transform: lowercase; font-family: @fntTitleFamily; font-size: @fntBaseSize * 2; font-weight: bold; margin: 0 0 10px 0; }
+  h2 { text-transform: lowercase; font-family: @fntTitleFamily; font-size: @fntBaseSize * 1.44; }
   nav.above-title a { font-size: 14px; text-transform: lowercase; }
 }
 
@@ -54,8 +54,11 @@ article.main {
 }
 
 @media screen and (max-width: 500px) {
-  body>header {
-    h1 {  font-size: 24px; line-height: 26px; }
-    img { width: 100%; }
+  article.main {
+    padding-top: 8px;
+    font-size: @fntBaseSize * 0.9;
+    h1 { font-size: @fntBaseSize * 1.5; }
+    h2 { font-size: @fntBaseSize * 1.1; }
+    img[src$='#narrow'] { width: 100%; }
   }
 }

@@ -8,7 +8,7 @@ title: Home of the Solarpunk Forever Engine
 
 The Solarpunk Forever Engine (or SP4EE) is a tiny scratch-built solar engine. It spins when the sun shines and it keeps counting its turns forever.
 
-SP4EE is work in progress, and this site is a build log. [Read more about the concept](/about), and check out my progress reports here. If you want an update in your Inbox once every week or two, subscribe to the email list here:
+SP4EE is work in progress, and this site is a build log. [Read more about the concept](/about), and check out my progress updates here. If you want an update in your Inbox once every week or two, subscribe to the newsletter here:
 
 {{< rawhtml >}}
 <div class="substack-signup">

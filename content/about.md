@@ -10,10 +10,10 @@ SP4EE is inspired by makers who have been building weird and beautiful *things* 
 
 It is an intelligent object that is controlled and supervised by a tiny computer. Although it runs a program, it is not connected to any network or the Internet. It stands on its own, powered by ambient light to generate motion and record the turns of its wheel.
 
-It has no moving parts other than the tiny ball bearing on which the flywheel is suspended. It should be able to keep working for decades. Its longevity is a meditation on how we can combine cheap modern electronics with scratch-built parts to create an object that is sustainable, durable, and serves no practical purpose whatsoever. In other words, it is my antidote to the lethargy I feel when I think of all the ready-made, throwaway consumer goods polluting our spaces.
+It has no moving parts other than the tiny ball bearing on which the flywheel is suspended. It should keep working ~~forever~~ for decades. Its longevity is a meditation on how we can combine cheap modern electronics with scratch-built parts to create an object that is sustainable, durable, and serves no practical purpose whatsoever. In other words, it is my antidote to the lethargy I feel when I look at all the ready-made, throwaway consumer goods polluting our spaces.
 
 ### Contact
 
 You can find SP4EE on Github at [github.com/sp4ee](https://github.com/sp4ee).  
-You can find me on Twitter as [@twilliability](https://twitter.com/twilliability)
-or at my blog [Jealous Markup](https://jealousmarkup.xyz/).
+You can find me on Twitter as [@twilliability](https://twitter.com/twilliability),
+or at my blog, [Jealous Markup](https://jealousmarkup.xyz/).

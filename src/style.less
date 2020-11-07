@@ -34,6 +34,10 @@ a {
   color: @clrText; text-decoration: none; border-bottom: 1pt dotted @clrContrast;
   &:hover { border-bottom-style: solid; }
 }
+h2 a { 
+  border-bottom: none;
+  &:hover { border-bottom: 1pt solid @clrContrast; }
+}
 
 article.main {
   padding-top: 30px;
@@ -44,6 +48,7 @@ article.main {
   h3 { text-transform: lowercase; font-family: @fntTitleFamily; font-weight: bold; }
   nav.above-title a { font-size: 14px; text-transform: lowercase; }
   p.pagemeta { margin: -10px 0 20px 0; font-size: @fntBaseSize * 0.95; font-style: italic; }
+  p.motto { margin-top: -10px; font-style: italic; text-transform: lowercase; }
   nav.full-entry-link { 
     font-size: @fntBaseSize * 0.9; text-transform: lowercase;
   }

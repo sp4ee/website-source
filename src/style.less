@@ -40,25 +40,26 @@ h2 a {
 }
 
 article.main {
-  padding-top: 30px;
+  padding-top: 30px; margin-bottom: 75px;
   img[src$='#narrow'] { display: block; width: 70%; }
-  img { display: block; width: 100%; }
+  img { display: block; max-width: 100%; }
   h1 { text-transform: lowercase; font-family: @fntTitleFamily; font-size: @fntBaseSize * 2; font-weight: bold; margin: 0 0 10px 0; }
   h2 { text-transform: lowercase; font-family: @fntTitleFamily; font-size: @fntBaseSize * 1.6; margin: 40px 0 10px 0; }
   h3 { text-transform: lowercase; font-family: @fntTitleFamily; font-weight: bold; }
   nav.above-title a { font-size: 14px; text-transform: lowercase; }
-  p.pagemeta { margin: -10px 0 20px 0; font-size: @fntBaseSize * 0.95; font-style: italic; }
-  p.motto { margin-top: -10px; font-style: italic; text-transform: lowercase; }
+  p { margin: 0 0 10px 0; }
+  p.pagemeta { margin: -8px 0 20px 0; font-size: @fntBaseSize * 0.95; font-style: italic; }
+  p.motto { margin: -8px 0 12px 0; font-style: italic; text-transform: lowercase; }
   nav.full-entry-link { 
     font-size: @fntBaseSize * 0.9; text-transform: lowercase;
   }
   .substack-signup { 
-    display: block; width: 100; height: 130px; position: relative;
-    border-top: 1pt solid #ccc;
-    border-bottom: 1pt solid #ccc;
+    display: block; width: 100%; height: 80px; position: relative;
+    //border-top: 1pt solid #ccc; border-bottom: 1pt solid #ccc;
     iframe { display: block; position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
   }
 }
+section.list-full h2 { margin-top: 10px; }
 
 @media screen and (max-width: 912px) {
   body {

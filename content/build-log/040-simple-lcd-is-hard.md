@@ -1,5 +1,5 @@
 ---
-draft: false
+draft: true
 layout: single
 description: Such camera angle, many gradient, so gorgeous.
 title: Why is it so hard to buy a simple LCD display?

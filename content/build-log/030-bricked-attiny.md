@@ -1,8 +1,8 @@
 ---
-draft: false
+draft: true
 layout: single
 description: Such camera angle, many gradient, so gorgeous.
-title: I just bricked my first ATTiny
+title: Help! I just bricked my first ATTiny
 slug: bricked-attiny
 publishdate: 2020-10-03
 ---

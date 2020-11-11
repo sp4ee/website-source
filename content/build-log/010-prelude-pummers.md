@@ -17,7 +17,7 @@ But he did, and here we are. I've discovered a delightful little subculture that
 
 ![FLED Photopopper](/images/010-fled_popper_small.jpg)
 
-They charge a capacitor from the solar cell, and periodically discharge the accumulated energy to drive a  tiny motor and give the beast a little nudge. There's a whole nomenclature of these creatures. One group is called _sitters_, and a subgroup of these immobile robots are the _pummers_, whose defining feature is that they blink while staying put.
+They charge a capacitor from the solar cell, and periodically discharge the accumulated energy to drive a  tiny motor and give the beast a little nudge. There's a whole taxonomy of these creatures. One group is called _sitters_, and a subgroup of these immobile robots are the _pummers_, whose defining feature is that they blink while staying put.
 
 After seeing Mohit Bhoite's work, in particular the "satellites" like SATtiny or the Cube Sat, I knew what I had to build was a pummer.
 

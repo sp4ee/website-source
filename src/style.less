@@ -6,6 +6,8 @@
 @clrText: #303030;
 @clrContrast: #cf1b1b;
 @bodyWidth: 900px;
+@bodyMobilePad: 16px;
+@imgWidth: 630px;
 
 * { box-sizing: border-box; }
 html { 
@@ -41,8 +43,8 @@ h2 a {
 
 article.main {
   padding-top: 30px; margin-bottom: 75px;
-  img[src$='#narrow'] { display: block; width: 70%; }
-  img { display: block; max-width: 100%; }
+  img[src$='#narrow'] { display: block; width: @imgWidth; }
+  img { display: block; max-width: 100%;  }
   h1 { text-transform: lowercase; font-family: @fntTitleFamily; font-size: @fntBaseSize * 2; font-weight: bold; margin: 0 0 10px 0; }
   h2 { text-transform: lowercase; font-family: @fntTitleFamily; font-size: @fntBaseSize * 1.6; margin: 40px 0 10px 0; }
   h3 { text-transform: lowercase; font-family: @fntTitleFamily; font-weight: bold; }
@@ -61,14 +63,41 @@ article.main {
 }
 section.list-full h2 { margin-top: 10px; }
 
+.youtube-container {
+  display: block; width: @imgWidth; position: relative; margin-bottom: 10px;
+  .video-placeholder { 
+    position: relative; 
+    .video-player-button {
+      position: absolute; left: 50%;  margin: -44px 0 0 -44px; top: 50%; width: 96px; height: 96px; cursor: pointer;
+    }
+    .video-snapshot-image { width: 100%; }
+    .overlay {
+      position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+      span { position: absolute; display: inline-block; color: white; left: 0;
+        width: 100%; background-color: rgba(#000, 0.5);  padding: 8px 12px;
+      }
+      .title { 
+        top: 0; line-height: 18px;
+        a { color: white; text-decoration: underline; border: none; font-size: 16px; }
+       }
+      .notice { 
+        bottom: 0; font-size: 13px; 
+        a { border-bottom: none; color: white; position: relative; float: right; font-size: 18px; margin-top: -3px; }
+      }
+    }
+  }
+}
+
+
 @media screen and (max-width: 912px) {
-  body {
-    padding: 0 16px;
-  }
-  body>header, body>article, body>footer {
-    width: 100%;
-  }
+  body { padding: 0 @bodyMobilePad; }
+  body>header, body>article, body>footer { width: 100%; }
   body>footer { position: relative; margin: 56px 0 8px 0; }
+}
+
+@media screen and (max-width: @imgWidth + 2 * @bodyMobilePad + 12px) {
+  .youtube-container { width: 100%; }
+  img[src$='#narrow'] { width: 100%; }
 }
 
 @media screen and (max-width: 500px) {
@@ -76,6 +105,5 @@ section.list-full h2 { margin-top: 10px; }
     padding-top: 8px;
     h1 { font-size: @fntBaseSize * 1.8; }
     h2 { font-size: @fntBaseSize * 1.6; }
-    img[src$='#narrow'] { width: 100%; }
   }
 }

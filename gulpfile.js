@@ -4,11 +4,10 @@ var less = require('gulp-less');
 var path = require('path');
 var concat = require('gulp-concat');
 var plumber = require('gulp-plumber');
-var uglify = require('gulp-uglify');
+var terser = require('gulp-terser');
 var minifyCSS = require('gulp-minify-css');
 var del = require('del');
 var browserify = require('browserify');
-var stringify = require('stringify');
 var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
 var sourcemaps = require('gulp-sourcemaps');
@@ -36,23 +35,17 @@ gulp.task('styles', gulp.series('less', function () {
 
 // Browserify scripts
 gulp.task('browserify', () => {
-  return browserify({
+  var b = browserify({
     entries: './src/index.js',
     debug: true
-  })
-    //.transform(stringify(['.html']))
-    .bundle()
-    .on('error', err => {
-      gutil.log("Browserify Error", gutil.colors.red(err.message))
-    })
-    .pipe(source('bundle.js'))
+  });
+  return b.bundle()
+    .pipe(source('./bundle.js'))
     .pipe(buffer())
-    .pipe(uglify())
-    .on('error', err => {
-     gutil.log("Uglify Error", gutil.colors.red(err.message))
-    })
-    .pipe(sourcemaps.init({ loadMaps: true }))
-    .pipe(sourcemaps.write('./'))
+    // .pipe(terser())
+    // .on('error', function (err) { gutil.log(gutil.colors.red('[Error]'), err.toString()); })
+    // .pipe(sourcemaps.init({ loadMaps: true }))
+    // .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest('./public/'))
     .pipe(gulp.dest('./static/'));
 });

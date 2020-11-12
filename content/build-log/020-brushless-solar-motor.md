@@ -19,7 +19,7 @@ Splendid! This guy has done it, so it's clearly possible: you can make a wheel o
 
 - There are no moving parts with friction! OK, that is obviously not _completely_ true because you need a bearing at the center. But that's the only one, and you can completely avoid electrical contacts.
 - Things that have no friction tend to last very long. I like the idea of building somehing that lasts very long.
-- This is a machine that showcases its inner workings instead of hiding them. What you see is exactly what it does. This is the mechanical equivalent of freeform circuits. It is a moving sculpture!
+- This is a machine that showcases its inner workings instead of hiding them. What you see is exactly what it does. This is the mechanical equivalent of freeform circuits. It is a functional sculpture!
 - It is mechanically very simple. I am fascinated by the potential of trading mechanical complexity for smart circuitry.
 - I can build it from scratch, down to hand-winding the solenoid!
 
@@ -36,8 +36,8 @@ I'm so happy with this concept that I made a quick pencil sketch. I put it as th
 - The output of a small solar cell _is_ limited, so the electronics need to be energy-efficient.
 - As luck has it, we have the super-accessible and cheap ATTiny chips that need ridiculously little energy, and even less when they go into sleep mode.
 - The display is a bit more tricky, but I can use an old-fashioned monochrome LCD with no backlight. It ought to be large enough so that it's prominent, and if this engine really is to run for decades, I need enough digits.
-- I love building with laser-cut wood a lot more than 3D printing. (3D printing is great, but ultimately the result is just a glorified piece of plastic.) So laser-cut wood it will be, with mostly exposed brass wires connecting the electric parts.
-- There is an element that comes straight from the BEAM cookbook: a large capacitor stores enough energy to power the electronics (though not the motor) for a few hours, so the machine can still be "on" even during cloudy spells, or for a while after dusk.
+- I love building with laser-cut wood a lot more than 3D printing. 3D printing is great, but ultimately the result is just a glorified piece of plastic. So laser-cut wood it will be, with mostly exposed brass wires connecting the electric parts.
+- There is an element that comes straight from the BEAM cookbook: a large capacitor stores enough energy to power the electronics (though not the motor) for a few hours, so the machine can still be "on" during cloudy spells, or for a while after dusk.
 
 There. That's the outline of the Solarpunk Forever Engine. I'm as excited as you are to see how the build will go!
 

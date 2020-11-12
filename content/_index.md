@@ -12,8 +12,11 @@ The Solarpunk Forever_Engine (or SP4EE) will be a tiny scratch-built solar engin
 Building SP4EE is my first attempt to [learn in public](https://www.swyx.io/learn-in-public/). I barely know a thing about electronics, microcontrollers or motors. So this will be a lot of fun! Check back to see what I'm currently failing at. Or sign up for the newsletter and get the updates right in your Inbox.
 
 {{< rawhtml >}}
-<div class="substack-signup">
-  <iframe src="https://sp4ee.substack.com/embed" frameborder="0" scrolling="no"></iframe>
+<div class="newsletter-signup">
+  <div class="placeholder">
+    <b>Sign me up for the newsletter</b><br/>
+    With this you accept Substack's <a class="newsletter-signup-link" href="https://substack.com/privacy" target="_blank">Privacy Policy</a>.
+  </div>
 </div>
 {{< /rawhtml >}}
 

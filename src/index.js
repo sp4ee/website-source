@@ -1,3 +1,22 @@
+// Initialize smart Substack newsletter subscription embedding
+window.addEventListener("load", function () {
+  const v = document.getElementsByClassName('newsletter-signup');
+  function updateElement() {
+    this.innerHTML = '<iframe src="https://sp4ee.substack.com/embed" frameborder="0" scrolling="no"></iframe>';
+  }
+  for (i = 0; i < v.length; i++) {
+    v[i].addEventListener("click", updateElement);
+  }
+  const lbl = document.getElementsByClassName('newsletter-signup-link');
+  for (i = 0; i < lbl.length; i++) {
+    lbl[i].addEventListener("click", function(e) {
+      e.stopPropagation = true;
+      e.cancelBubble = true;
+    });
+  }
+});
+
+// Initialize smart YouTube video embeddings
 window.addEventListener("load", function () {
   const v = document.getElementsByClassName('youtube-container');
   function updateVideo() {

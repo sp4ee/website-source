@@ -32,12 +32,10 @@ This website contains links to the websites of third parties (“external links�
 
 ### Copyright
 
-The content and works published on this website are governed by the copyright laws of Germany. Any duplication, processing, distribution or any form of utilisation beyond the scope of copyright law shall require the prior written consent of the author or authors in question.
+All the content and works published on this website, unless otherwise noted, is the copyright of the author, Gábor L Ugray. It is licensed under Creative Commons Attribution-NonCommercial-ShareAlike ([CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode)).
 
 ### Data protection
 
-A visit to this website can result in the server-side storage of information about the access (date, time, page accessed). This does not represent any analysis of personal data (e.g., name, address or e-mail address). If personal data are collected, this only occurs – to the extent possible – with the prior consent of the user of the website. Any forwarding of the data to third parties without the express consent of the user shall not take place.
-
-I would like to expressly point out that the transmission of data via the Internet (e.g., by e-mail) can offer security vulnerabilities. It is therefore impossible to safeguard the data completely against access by third parties. I cannot assume any liability for damages arising as a result of such security vulnerabilities.
+A visit to this website can result in the server-side storage of information about the access (date, time, page accessed, anonymized IP address). This does not represent any analysis of personal data (e.g., name, address or e-mail address). The website does not collect any form of personal data, and it does not transfer any data related to page visits to third parties without explicit, case-by-case consent to the privacy terms of such third parties. This lack of tracking and data collection explains the lack of cookie warnings or other frequently seen consent forms.
 
 The use by third parties of all published contact details for the purpose of advertising is expressly excluded. I reserve the right to take legal steps in the case of the unsolicited sending of advertising information; e.g., by means of spam mail.

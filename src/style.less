@@ -54,7 +54,7 @@ figure figcaption {
   p { margin: 0; padding: 0; }
 }
 figure:hover figcaption { opacity: 0.2; }
-hr.clear { height: 0; margin: 0; width: 100%; position: relative; clear: both; color: transparent; }
+div.clear { height: 0; margin: 0; width: 100%; position: relative; clear: both; color: transparent; }
 blockquote {
   position: relative; font-size: 17px; margin: 15px 0 15px 48px; padding-left: 15px; overflow: visible;
   &:before {
@@ -121,10 +121,12 @@ article.single {
 }
 
 
-@media screen and (max-width: 912px) {
+@media screen and (max-width: 935px) {
   body { padding: 0 @bodyMobilePad; }
   body>header, body>article, body>footer { width: 100%; }
   body>footer { position: relative; margin: 56px 0 8px 0; }
+  figure.left, figure.right { width: 48%; }
+  figure.right { margin-left: 2%; } 
 }
 
 @media screen and (max-width: @imgWidth + 2 * @bodyMobilePad + 12px) {
@@ -135,9 +137,11 @@ article.single {
 @media screen and (max-width: 500px) {
   article.main {
     padding-top: 8px;
-    h1 { font-size: @fntBaseSize * 1.8; }
-    h2 { font-size: @fntBaseSize * 1.6; }
   }
+  h1 { font-size: @fntBaseSize * 1.8; }
+  h2 { font-size: @fntBaseSize * 1.6; }
+  figure.left, figure.right { width: 100%; }
+  figure.right { margin-left: 0; } 
   .youtube-container {
     .video-placeholder { 
       .video-player-button {

@@ -5,6 +5,7 @@
 @fntBaseSize: 18px;
 @clrText: #303030;
 @clrContrast: #cf1b1b;
+@clrContrastFaint: #c06b6b;
 @bodyWidth: 900px;
 @bodyMobilePad: 16px;
 @imgWidth: 630px;
@@ -32,6 +33,35 @@ body>footer {
   width: 100%; padding: 8px; font-size: 14px;
 }
 
+
+// General formatting
+
+img[src$='#narrow'] { display: block; width: @imgWidth; }
+img { display: block; max-width: 100%;  }
+h1 { text-transform: lowercase; font-family: @fntTitleFamily; font-size: @fntBaseSize * 2; font-weight: bold; margin: 0 0 10px 0; }
+h2 { text-transform: lowercase; font-family: @fntTitleFamily; font-size: @fntBaseSize * 1.6; margin: 40px 0 10px 0; }
+h3 { text-transform: lowercase; font-family: @fntTitleFamily; font-weight: bold; }
+nav.above-title a { font-size: 14px; text-transform: lowercase; }
+p { margin: 0 0 10px 0; }
+p.pagemeta { margin: -8px 0 20px 0; font-size: @fntBaseSize * 0.95; font-style: italic; }
+p.motto { margin: -8px 0 12px 0; font-style: italic; text-transform: lowercase; }
+li { margin: 0 0 5px 0; }
+nav.full-entry-link {  font-size: @fntBaseSize * 0.9; text-transform: lowercase; }
+figure.left, figure.right { width: @bodyWidth/2-10px; float: left; margin: 0 0 15px 0; padding: 0; position: relative; }
+figure.right { margin-left: 20px; clear: right; }
+figure figcaption {
+  position: absolute; top: 0; width: 100%; background-color: rgba(#000, 0.5); color: white; padding: 4px 12px 8px 12px;
+  p { margin: 0; padding: 0; }
+}
+figure:hover figcaption { opacity: 0.2; }
+hr.clear { height: 0; margin: 0; width: 100%; position: relative; clear: both; color: transparent; }
+blockquote {
+  position: relative; font-size: 17px; margin: 15px 0 15px 48px; padding-left: 15px; overflow: visible;
+  &:before {
+    position: absolute; top: -4px; left: -40px; content: '\201C';
+    color: @clrContrastFaint; font-size: 64px; font-family: serif; font-weight: bold;
+  }
+}
 a { 
   color: @clrText; text-decoration: none; border-bottom: 1pt dotted @clrContrast;
   &:hover { border-bottom-style: solid; }
@@ -41,35 +71,31 @@ h2 a {
   &:hover { border-bottom: 1pt solid @clrContrast; }
 }
 
+// Structure
+
 article.main {
   padding-top: 30px; margin-bottom: 75px;
-  img[src$='#narrow'] { display: block; width: @imgWidth; }
-  img { display: block; max-width: 100%;  }
-  h1 { text-transform: lowercase; font-family: @fntTitleFamily; font-size: @fntBaseSize * 2; font-weight: bold; margin: 0 0 10px 0; }
-  h2 { text-transform: lowercase; font-family: @fntTitleFamily; font-size: @fntBaseSize * 1.6; margin: 40px 0 10px 0; }
-  h3 { text-transform: lowercase; font-family: @fntTitleFamily; font-weight: bold; }
-  nav.above-title a { font-size: 14px; text-transform: lowercase; }
-  p { margin: 0 0 10px 0; }
-  p.pagemeta { margin: -8px 0 20px 0; font-size: @fntBaseSize * 0.95; font-style: italic; }
-  p.motto { margin: -8px 0 12px 0; font-style: italic; text-transform: lowercase; }
-  li { margin: 0 0 5px 0; }
-  nav.full-entry-link { 
-    font-size: @fntBaseSize * 0.9; text-transform: lowercase;
-  }
 }
-section.list-full h2 { margin-top: 10px; }
+section.list-full {
+  h2 { margin-top: 10px; }
+}
+article.single {
+  // Make h3 (internal headers in articles) as large as h2 on title page
+  h3 { font-size: @fntBaseSize * 1.6; margin: 40px 0 10px 0; }
+}
+
+// Special embeddings
 
 .newsletter-signup { 
   display: block; width: 100%; height: 80px; position: relative;
   .placeholder {
-    background-color: #c06b6b; &:hover { background-color: @clrContrast; }
+    background-color: @clrContrastFaint; &:hover { background-color: @clrContrast; }
     width: 327px; height: 54px; border-radius: 5px; color: white;
     margin: 0 auto 0 auto; padding-top: 6px; text-align: center; cursor: default; font-size: 14px;
     a { border-bottom: none; text-decoration: underline; color: white; }
   }
   iframe { display: block; position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
 }
-
 
 .youtube-container {
   display: block; width: @imgWidth; position: relative; margin-bottom: 10px;

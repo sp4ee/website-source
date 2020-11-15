@@ -1,6 +1,6 @@
 {{ partial "header" . }}
 
-<article class="main">
+<article class="main single">
   <nav class="above-title"><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a> »</nav>
   <h1>{{ .Title }}</h1>
   {{ if isset .Params "publishdate" }}<p class="pagemeta">{{ .PublishDate.Format "January 2, 2006" }}</p>{{ end }}

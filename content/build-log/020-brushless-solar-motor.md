@@ -4,7 +4,7 @@ layout: single
 description: Such camera angle, many gradient, so gorgeous.
 title: Motion and smarts
 slug: motion-smarts-solar-engine
-publishdate: 2020-10-12
+publishdate: 2020-10-17
 ---
 
 Learning about pummers awakened my building instinct, but it turns out the desire goes a bit deeper this time. A blinking light is, well, a blinking light, but it's somehow very -- abstract? immaterial? The non-sitters in the BEAM menagerie get their twitchy motion from tiny motors soldered in weird ways, and that, in turn, is somehow a little -- scrappy?
@@ -27,7 +27,7 @@ This is getting warm. But if I'm honest, I don't need a microcontroller to make 
 
 I need a good excuse for a microcontroller.
 
-Let's make it count the motor's turns and show it on a display! In fact, let's make it count those turns _forever_, showing a number that grows day after day and never resets. In fact, let's call this thing the _forever engine_!
+Let's make it count the wheel's turns and show it on a display! In fact, let's make it count those turns _forever_, showing a number that grows day after day and never resets. In fact, let's call this thing the _forever engine_!
 
 I'm so happy with this concept that I made a quick pencil sketch. I put it as the site's title image, but here it is again:
 

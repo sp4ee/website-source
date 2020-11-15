@@ -11,7 +11,7 @@ I got to build a prototype motor! And it works.
 
 There are so many open questions about the motor. How many magnets should the wheel have? Should it be an odd or an even number? What type of wire is best for the coil, and how many turns? I decided to first replicate something very close to the video I included in the previous post. That uses a reed relay, which is the simplest way to achieve motor control with zero electronics. Can I get a running motor from a battery? Will it run from a solar cell?
 
-If you're only interested in seeing the working proof-of-concept, here it is. For thecccc part that really matters, read on ;-)
+If you're only interested in seeing the working proof-of-concept, here it is. For the part that really matters, read on ;-)
 
 {{< youtubevid id="Msv9fFuiVH4" img="/images/030-Msv9fFuiVH4.jpg" title="Brushless motor with reed relay: test from battery" >}}
 

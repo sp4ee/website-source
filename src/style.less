@@ -46,7 +46,7 @@ p { margin: 0 0 10px 0; }
 p.pagemeta { margin: -8px 0 20px 0; font-size: @fntBaseSize * 0.95; font-style: italic; }
 p.motto { margin: -8px 0 12px 0; font-style: italic; text-transform: lowercase; }
 li { margin: 0 0 5px 0; }
-nav.full-entry-link {  font-size: @fntBaseSize * 0.9; text-transform: lowercase; }
+nav.full-entry-link { text-transform: lowercase; }
 figure.left, figure.right { width: @bodyWidth/2-10px; float: left; margin: 0 0 15px 0; padding: 0; position: relative; }
 figure.right { margin-left: 20px; clear: right; }
 figure figcaption {
@@ -62,6 +62,7 @@ blockquote {
     color: @clrContrastFaint; font-size: 64px; font-family: serif; font-weight: bold;
   }
 }
+.highlight pre { padding: 10px; overflow-x: scroll; }
 a { 
   color: @clrText; text-decoration: none; border-bottom: 1pt dotted @clrContrast;
   &:hover { border-bottom-style: solid; }

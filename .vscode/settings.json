@@ -3,5 +3,12 @@
     "node_modules": true,
     "public": true,
     "src-comp": true,
+  },
+  "spellright.ignoreRegExpsByClass": {
+    "markdown": [ 
+      "/\\{\\{<[^\\>]+\\>\\}\\}/g",
+      "/(slug|publishdate):[^\\n]*/g"
+    ],
   }
+
 }

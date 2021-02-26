@@ -13,7 +13,7 @@ After I got the [brushless motor prototype](/build-log/working-brushless-motor-p
 
 <!--more-->
 
-I fell in love with the ATTiny because of its simplicity. Yes, the "classic" microcontrollers like the various Arduinos or the ESP32 are also impressively small and accessible. But they still come with a breakout board with two dozen or more pins, a USB socket, with the ESPs even WiFi and Bluetooth... It's a lot. In contrast, with the ATTiny45 or ATTiny85:
+I fell in love with the ATTiny because of its simplicity. Yes, the "classic" microcontrollers like the various Arduinos or the ESP32 are also impressively small and accessible. But they still come with a breakout board with two dozen or more pins, a USB socket, in the ESP's case even WiFi and Bluetooth... It's a lot. In contrast, with the ATTiny45 or ATTiny85:
 
 - You have a single chip with 4 pins on both sides, and that's it. You're good to go.
 
@@ -21,7 +21,7 @@ I fell in love with the ATTiny because of its simplicity. Yes, the "classic" mic
 
 - You need very little power: between 8&#8239;mA for 8&#8239;MHz at 5&#8239;V, down to 0.7&#8239;mA for 1&#8239;MHz at 3&#8239;V. And this goes down to _ridiculously_ little power in sleep mode, measured in single-digit μA. This, together with the generous voltage range, is exactly what I need in a solar-cell-powered setting.
 
-- Writing software for these chips is also a different experience altogether. Your limits are something like  512 bytes to 4 KB of Flash for your code and 64 to 512 bytes of RAM. This is getting exciting!
+- Writing software for these chips is also a different experience altogether. Your limits are something like 512 bytes to 4 KB of Flash for your code and 64 to 512 bytes of RAM. This is getting exciting!
 
 - They have an EEPROM so I can store the "lifetime revolutions" count persistently before the chip shuts down each night. These EEPROMs last for about 100 thousand write cycles, which means that even if I write the value twice every day, I have over 100 years of expected lifetime. I can live with that.
 
@@ -47,7 +47,7 @@ Once I figured out the capacitor trick with the Arduino, writing and uploading t
 #include <Arduino.h>
 
 const int led = 1;
-const int sleep = 100;
+const int sleep = 1000;
 
 // the setup routine runs once when you press reset:
 void setup()
@@ -96,11 +96,11 @@ sei();                // Enable interrupts
 
 There are two details that none of the pages I visited seemed to mention.
 
-- The value you write into CLKPR is interpreted as "2 to the power of N", and _not_ as N. This seems to be a case where someone published an article somewhere without explaining what's going on, and then this snippet got copied by others who also don't understand what's going on, and it's such a fringe thing that nobody really notices or bothers to fix the example. I got the explanation included in the code snippet above from a comment buried deep down under a little-visited article.
+- The value you write into CLKPR is interpreted as "2 to the power of N", and _not_ as N. This seems to be a case where someone published an article somewhere without explaining what's going on, and then this snippet got copied by others who also didn't understand what's going on, and it's such a fringe thing that nobody really notices or bothers to fix the example. I got the explanation included in the code snippet above from a comment buried deep down under a little-visited article.
 
-- If you change the CPI clock prescaler, then the next time you want to upload new code into the ATTiny's Flash, you have to adjust the serial bus's frequency.
+- If you change the CPU clock prescaler, then the next time you want to upload new code into the ATTiny's Flash, you have to adjust the serial bus's frequency.
 
-This latter part is what got me. I successfully reduced my first ATTiny45's clock speed to 128&#8239;kHz, and could never upload another program again. I was apparently [not the first one to run into this](https://forum.arduino.cc/index.php?topic=182138.0). It is probably possible to reset this chip physically, but the number of hours I would need to get there is way more than what the chip itself is worth. So now I have this sad guy lying around -- a [dead bug](https://en.wikipedia.org/wiki/Point-to-point_construction#%22Dead_bug%22_construction), for all intents and purposes.
+This latter part is what got me. I successfully reduced my first ATTiny45's clock speed to 128&#8239;kHz, and could never upload another program again. I was apparently [not the first one to run into this](https://forum.arduino.cc/index.php?topic=182138.0). It is probably possible to reset this chip physically, but the number of hours I would need to get there is way more than what the chip is worth. So now I have this sad guy lying around -- a [dead bug](https://en.wikipedia.org/wiki/Point-to-point_construction#%22Dead_bug%22_construction), for all intents and purposes.
 
 ![Sad bricked ATTiny45](/images/040-attiny-bricked.jpg#narrow)
 

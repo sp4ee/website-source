@@ -13,6 +13,8 @@ May Kevin Lynagh be damned! I have just found me an entire new herd of yak to sh
 
 <!--more-->
 
+<!-- https://electronics.stackexchange.com/questions/530319/solar-powered-74hc14-led-flasher-oscillators-interfere -->
+
 But he did, and here we are. I've discovered a delightful little subculture that dates back to the 1990s, when you could first scavenge tiny motors and solar panels from defunct mass-produced consumer goods. And scavenge they did, these folks! This dude Mark Tilden came up with the whole [BEAM](https://en.wikipedia.org/wiki/BEAM_robotics) idea, the name being short for _Biology, Electronics, Aesthetics and Mechanics_. This is the kind of thing you should think of (photo from [smfr.org](http://www.smfr.org/robots/fled_popper.html)):
 
 ![FLED Photopopper](/images/010-fled_popper_small.jpg)
